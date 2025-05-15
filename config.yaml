@@ -1,0 +1,23 @@
+dataset:
+  name: Abide
+  k: 0
+  atlas: cc200
+model:
+  name: PSPGnn
+  n_heads: 4
+  dropout: 0.3
+  r: 0.4
+optimizer:
+  name: Adam # Adam
+  learning_rate: 0.001 # 0.001
+  weight_decay: 0.0001 # 0.0001
+
+# wandb
+project: psp-gnn
+
+# training
+seed: 0
+fold: 10
+batch_size: 128
+use_deterministic: True
+patience: 80
